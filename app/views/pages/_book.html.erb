@@ -1,0 +1,13 @@
+<div class="col">
+  <%= link_to book_path(book), class: "text-decoration-none" do %>
+    <div class="card">
+      <img class="card-img-top" src="https://picsum.photos/300/200?random=<%= rand(100) %>" title=<%= book.title %> alt=<%= book.title %>>
+      <div class="card-body">
+        <p class="card-text d-flex">
+          <%= book.title %>
+          <span class="ms-auto">$<%= book.price %></span>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>
