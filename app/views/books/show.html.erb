@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="card-img-top" src="https://picsum.photos/300/200?random=<%= rand(100) %>" title=<%= @book.title %> alt=<%= @book.title %>>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= @book.title %></h5>
+          <p class="card-text">$<%= @book.price %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
